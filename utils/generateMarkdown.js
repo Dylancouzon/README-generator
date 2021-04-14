@@ -16,16 +16,27 @@ function renderLicense(license) {
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data, writeToFile) {
+function generateMarkdown(data) {
 
   let license = renderLicense(data.license);
-  const marky = `
-   # ${data.project}
+let md = `
+# ${data.project}
 
-   # License : 
-   ${license}
-  `;
-  writeToFile(data.project + '.md', marky);
+## Description of the project:
+${data.description}
+
+## Author's Links
+<${data.email}>
+[GitHub](https://github.com/${data.gitHuB})
+`;
+if(license){
+licenseTxt = `
+## License :
+${license}
+`;
+}
+  return md.concat(licenseTxt);
+  
 }
 
 module.exports = { generateMarkdown };

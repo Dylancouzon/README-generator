@@ -23,7 +23,9 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            const data = markdown.generateMarkdown(response, writeToFile)
+            const data = markdown.generateMarkdown(response)
+            console.log(data);
+            writeToFile(response.project + '.md', data);
         }
         );
 }
