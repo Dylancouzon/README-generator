@@ -3,7 +3,6 @@ const markdown = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
 const questions = [
     { type: 'input', message: 'what is your GitHub adress?', name: 'gitHuB' },
     { type: 'input', message: 'what is your email adress?', name: 'email' },
@@ -15,7 +14,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     // console.log(fileName);
-    fs.writeFile(fileName, JSON.stringify(data), (err) =>
+    fs.writeFile(fileName, data, (err) =>
          err ? console.log('Error!') : console.log('Success!'));
 }
 
