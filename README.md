@@ -6,6 +6,7 @@ Homework for UC Berkeley Extension Coding Bootcamp
 ## Technologies Used
 - Javascript - Backend coding
 - Node - JavaScript runtime environment
+- Inquirer - Node package
 
 ## Summary 
 This is a command-line application that generates styled readme Markdown files for different kinds of projects.
