@@ -3,7 +3,7 @@ Project realized for UC Berkeley Extension Coding Bootcamp
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Site](./screenshot.png)
+![Site](./generator.gif)
 
 ## Technology
 <img align="left" alt="HTML" width="25x" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"/> &nbsp;
@@ -65,7 +65,7 @@ licenseTxt = `
 ${licenseLink}
 `;
 ```
-In this example, I am show how I used Template literals to embed a variable inside a string.
+In this example, I am showing how I used Template literals to embed a variable inside a string.
 
 <br>
 <hr>
